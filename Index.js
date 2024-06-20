@@ -4,13 +4,13 @@ var path = require('path');
 
 let port = process.env.PORT || 3000;
 
-app.set('views', path.join(__dirname,'Views'));
+app.set('views', path.join(__dirname,'views'));
 app.set('view engine', 'ejs');
 
-app.use(express.static(path.join(__dirname, 'Public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-    res.render('Views/Home')
+    res.render('Home')
 })
 
 app.listen(port, () => {
