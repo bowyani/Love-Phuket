@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'Public')));
 
 app.get('/', (req, res) => {
-    res.render('Home')
+    res.render('Views/Home')
 })
 
 app.listen(port, () => {
